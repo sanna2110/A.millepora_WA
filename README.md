@@ -9,7 +9,7 @@
     - Output from this in table format is in **multiqc_output.xlsx**
     - Link to website with graphs etc. is **multiqc_report.html** —> this also has results for samoensis so ignore anything starting with SA or SS
 - Used **cutadapt** to remove adapter reads and any reads less than Q=15, or length < 25bp
-    - This produced .trimlog files with information about each sample, which I will put **XXXX**
+    - This produced .trimlog files with information about each sample, which I will put in **quality_check** folder
     - Excel file called **cutadapt_summary** also includes a summary of these files
 - Used **bowtie2** to map to genome —> used a concatenated *A. millepora* + symbionts genome (has genomes of four Symbiodiniaceae strains/species concatenated at the end)
     - This resulted in a single .sam file for each sample
@@ -44,5 +44,6 @@
 
 **Demographic History Analysis**
 
-- Tried GADMA
-- Tried moments (Misha’s github)
+- First, tried GADMA —> didn’t really work so I think if you were to try again you’re better to try from scratch instead of trying to decipher all of the options I tried. I’ll include the best figure it made, but the residuals from this model were huge, and Misha suggested that it didn’t work because the data just doesn’t fit any of the models that GADMA uses. The following method takes a LOT more models and tries to fit the data to them
+- Then tried a different method, using *moments* —> followed steps on Misha’s GitHub page to obtain bootstrapped SFS with ANGSD (at the end of the README)  https://github.com/z0on/AFS-analysis-with-moments
+    - Got the bootstrapped SFS files, but then when I tried to run the actual scripts, I got weird errors and therefore haven’t got any output from this —> asked Misha for help and he was unsure of where the errors are coming from
