@@ -16,8 +16,8 @@
 - Then used **samtools view** to extract only host reads (getting rid of symbiont reads) —> current .bam files have only host reads
 - Then used **samtools sort** to make .bam files and **samtools index** to create .bam.csi files
 
-- Currently have .fastq.gz files in /work/08908/sanna21/fastqfiles
-    - These have been made from .bam files, so they’re not paired, just one for each sample
+- Currently have .fastq.gz files in /work/08908/sanna21/fastqfiles and /work/08908/sanna21/fuller
+    - As the original fastq files were lost, the new ones have been made from .bam files, so they’re not paired, just one for each sample
 - Currently have .bam files in /scratch/08908/sanna21/gadma/
     - This include all of our *A. millepora* samples (14x autumn spawners, 10x spring spawners)
     - Also includes Fuller samples (20 samples)
