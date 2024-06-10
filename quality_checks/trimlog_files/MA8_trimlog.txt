@@ -1,0 +1,93 @@
+This is cutadapt 4.0 with Python 3.9.13
+Command line parameters: -a CTGTCTCTTATACACATCT -A CTGTCTCTTATACACATCT -q 15,15 -m 25 -o MA8_R1.trim -p MA8_R2.trim MA8_R1.fq MA8_R2.fq
+Processing paired-end reads on 1 core ...
+Finished in 160.85 s (16 µs/read; 3.77 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         10,097,830
+  Read 1 with adapter:                  49,653 (0.5%)
+  Read 2 with adapter:                  55,367 (0.5%)
+
+== Read fate breakdown ==
+Pairs that were too short:                 648 (0.0%)
+Pairs written (passing filters):    10,097,182 (100.0%)
+
+Total basepairs processed: 3,033,841,117 bp
+  Read 1: 1,517,416,166 bp
+  Read 2: 1,516,424,951 bp
+Quality-trimmed:               3,385,127 bp (0.1%)
+  Read 1:     1,455,507 bp
+  Read 2:     1,929,620 bp
+Total written (filtered):  3,030,033,288 bp (99.9%)
+  Read 1: 1,515,739,935 bp
+  Read 2: 1,514,293,353 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 49653 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 29.2%
+  C: 17.8%
+  G: 23.6%
+  T: 29.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	43327	157778.6	0	43327
+4	2777	39444.6	0	2777
+5	2464	9861.2	0	2464
+6	262	2465.3	0	262
+7	159	616.3	0	159
+8	55	154.1	0	55
+9	34	38.5	0	8 26
+10	112	9.6	1	5 107
+11	125	2.4	1	3 122
+12	102	0.6	1	3 99
+13	24	0.2	1	2 22
+14	34	0.0	1	7 27
+15	35	0.0	1	2 33
+16	89	0.0	1	10 79
+17	29	0.0	1	5 24
+18	25	0.0	1	0 25
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 55367 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 28.4%
+  C: 18.5%
+  G: 24.3%
+  T: 28.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	47035	157778.6	0	47035
+4	4230	39444.6	0	4230
+5	2741	9861.2	0	2741
+6	374	2465.3	0	374
+7	181	616.3	0	181
+8	75	154.1	0	75
+9	34	38.5	0	8 26
+10	137	9.6	1	1 136
+11	148	2.4	1	3 145
+12	125	0.6	1	17 108
+13	31	0.2	1	5 26
+14	41	0.0	1	4 37
+15	51	0.0	1	9 42
+16	113	0.0	1	13 100
+17	25	0.0	1	2 23
+18	26	0.0	1	0 26

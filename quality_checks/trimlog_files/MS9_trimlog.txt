@@ -1,0 +1,93 @@
+This is cutadapt 4.0 with Python 3.9.13
+Command line parameters: -a CTGTCTCTTATACACATCT -A CTGTCTCTTATACACATCT -q 15,15 -m 25 -o MS9_R1.trim -p MS9_R2.trim MS9_R1.fq MS9_R2.fq
+Processing paired-end reads on 1 core ...
+Finished in 114.50 s (15 µs/read; 3.98 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          7,586,866
+  Read 1 with adapter:                  38,649 (0.5%)
+  Read 2 with adapter:                  42,216 (0.6%)
+
+== Read fate breakdown ==
+Pairs that were too short:                 352 (0.0%)
+Pairs written (passing filters):     7,586,514 (100.0%)
+
+Total basepairs processed: 2,263,505,723 bp
+  Read 1: 1,131,852,177 bp
+  Read 2: 1,131,653,546 bp
+Quality-trimmed:               2,269,514 bp (0.1%)
+  Read 1:       999,679 bp
+  Read 2:     1,269,835 bp
+Total written (filtered):  2,260,926,545 bp (99.9%)
+  Read 1: 1,130,692,740 bp
+  Read 2: 1,130,233,805 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 38649 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 30.8%
+  C: 17.9%
+  G: 22.8%
+  T: 28.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	33494	118544.8	0	33494
+4	2343	29636.2	0	2343
+5	1909	7409.0	0	1909
+6	253	1852.3	0	253
+7	173	463.1	0	173
+8	49	115.8	0	49
+9	20	28.9	0	3 17
+10	83	7.2	1	2 81
+11	68	1.8	1	0 68
+12	51	0.5	1	2 49
+13	26	0.1	1	12 14
+14	27	0.0	1	5 22
+15	16	0.0	1	9 7
+16	101	0.0	1	24 77
+17	14	0.0	1	2 12
+18	22	0.0	1	0 22
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 42216 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 30.0%
+  C: 17.7%
+  G: 23.9%
+  T: 28.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	36136	118544.8	0	36136
+4	3074	29636.2	0	3074
+5	2010	7409.0	0	2010
+6	291	1852.3	0	291
+7	189	463.1	0	189
+8	50	115.8	0	50
+9	22	28.9	0	3 19
+10	89	7.2	1	1 88
+11	109	1.8	1	1 108
+12	56	0.5	1	0 56
+13	19	0.1	1	2 17
+14	38	0.0	1	4 34
+15	35	0.0	1	13 22
+16	79	0.0	1	6 73
+17	13	0.0	1	1 12
+18	6	0.0	1	0 6

@@ -1,0 +1,93 @@
+This is cutadapt 4.0 with Python 3.9.13
+Command line parameters: -a CTGTCTCTTATACACATCT -A CTGTCTCTTATACACATCT -q 15,15 -m 25 -o MS4_R1.trim -p MS4_R2.trim MS4_R1.fq MS4_R2.fq
+Processing paired-end reads on 1 core ...
+Finished in 163.21 s (15 µs/read; 3.95 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:         10,745,825
+  Read 1 with adapter:                  54,384 (0.5%)
+  Read 2 with adapter:                  59,679 (0.6%)
+
+== Read fate breakdown ==
+Pairs that were too short:                 793 (0.0%)
+Pairs written (passing filters):    10,745,032 (100.0%)
+
+Total basepairs processed: 3,221,181,988 bp
+  Read 1: 1,611,026,283 bp
+  Read 2: 1,610,155,705 bp
+Quality-trimmed:               3,915,603 bp (0.1%)
+  Read 1:     1,607,598 bp
+  Read 2:     2,308,005 bp
+Total written (filtered):  3,216,799,802 bp (99.9%)
+  Read 1: 1,609,173,371 bp
+  Read 2: 1,607,626,431 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 54384 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 28.6%
+  C: 18.3%
+  G: 23.9%
+  T: 29.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	47284	167903.5	0	47284
+4	3263	41975.9	0	3263
+5	2527	10494.0	0	2527
+6	310	2623.5	0	310
+7	199	655.9	0	199
+8	71	164.0	0	71
+9	30	41.0	0	6 24
+10	123	10.2	1	4 119
+11	143	2.6	1	3 140
+12	125	0.6	1	11 114
+13	35	0.2	1	11 24
+14	43	0.0	1	4 39
+15	42	0.0	1	6 36
+16	117	0.0	1	12 105
+17	34	0.0	1	0 34
+18	38	0.0	1	0 38
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 59679 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 27.7%
+  C: 18.2%
+  G: 24.5%
+  T: 29.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	50268	167903.5	0	50268
+4	5047	41975.9	0	5047
+5	2906	10494.0	0	2906
+6	416	2623.5	0	416
+7	223	655.9	0	223
+8	84	164.0	0	84
+9	38	41.0	0	9 29
+10	143	10.2	1	4 139
+11	146	2.6	1	3 143
+12	94	0.6	1	3 91
+13	38	0.2	1	6 32
+14	40	0.0	1	4 36
+15	49	0.0	1	6 43
+16	129	0.0	1	13 116
+17	35	0.0	1	3 32
+18	23	0.0	1	0 23
